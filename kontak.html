@@ -49,9 +49,51 @@
             <!--Grup 2 : Detail Pemesanan Layanan-->
             <fieldset>
                 <legend><b>2. Rincian Pemesanan Jasa digital</b></legend>
+                <br>
+                <label for="pilih paket">Pilih Paket Layanan (Lihat katalog di halaman Produk):</label><br>
+                <select name="pilih paket" id="pilih paket" required>
+                    <option value="">-- Pilih Paket Jasa --</option>
+                    <option value="Silver">Paket Silver Branding (Rp. 1.500.000)</option>
+                    <option value="Gold">Paket GOld Web Development (Rp. 3.000.000)</option>
+                    <option value="Platinum">Paket Platinum Full Digital Transformation (Rp. 5.000.000)</option>
+                    <option value="Custom">Konsultasi Custom Project</option>
+                </select>
+                <br><br>
+
+                <label>Layanana Tambahan (Add-ons):</label><br>
+                <input type="checkbox" name="addons[]" id="addon_seo" value="SEO Optimization">
+                <label for="addon_seo">Optimasi SEO On-Page (+ Rp. 500.000)</label><br>
+                <input type="checkbox" name="addon_express" id="addons[]" value="Express Delivery">
+                <label for="addon_express">Pengerjaan Kilat 3 Hari (+ Rp. 750.000)</label><br>
+                <input type="checkbox" name="addons[]" id="addon_content" value="Content Writing">
+                <label for="addon_content">penulisan Konten Artikel & Copywriting (+ Rp. 400.000)</label>
+                <br><br>
+
+                <label for="target_selesai">Estimasi target Selesai</label><br>
+                <input type="date" name="target_selesai" id="target_selesai"><br><br>
+
+                <label for="detail_pesan">Deskripsi / Catatan khusus Proyek</label><br>
+                <textarea name="detail_pesan" id="detail_pesan" rows="6" cols="50" placeholder="Tuliskan gambaran singkat mengenai proyek yang anda inginkan..."></textarea>
+                <br><br>
             </fieldset>
-            
+            <br>
+
+            <!--Tombol Aktif-->
+            <button type="submit"><b>Kirim Pemesanan Sekarang</b></button>&nbsp;
+            <button type="reset">Bersihkan Formulir</button>
         </form>
+        <!--Bagian Informasi Alamat & Peta Studio-->
+        <section>
+            <hr>
+            <h3>Kantor & Studio Operasional</h3>
+            <p><b>Poliban DigiCraft Studio Banjarmasin</b><br>
+            Gedung Laboratorium Bisnis Digital, Kampus Politeknik Negeri Banjarmasin<br>
+            Jl. brigjen H. hasan Basry, Kayu Tangi, Banjarmasin, Kalimantan Selatan<br>
+            Email: <i>info@digicraftstudio.ac.id</i> | WhatsApp: <i>0812-5555-8888</i></p>
+
+            <h4>Lokasi Studio di Google Maps</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.219719647902!2d114.57935537353539!3d-3.295693896679192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a80d47ba6b%3A0x8f5abfaddfe5a2d7!2sPoliteknik%20Negeri%20Banjarmasin!5e0!3m2!1sid!2sid!4v1791270674922!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
     </main>
 
     <fouter>
