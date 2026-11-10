@@ -1,38 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Mahasiswa</title>
-</head> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <h1>PROFIL BIODATA MAHASISWA</h1>
-    <hr>
-    <div>
-        <h2>Profil Utama</h2>
-        <!---->
-        <p>Nama :<strong> Putri Annisa</strong></p>
-        <p>Nim  : <em>E30425121</em></p>
-        <p>Program Studi    : D4 Bisnis Digital</p>
-        <p>Kelas    : 3E Bisnis Digital</p>
-    </div>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>PROFIL BIODATA MAHASISWA</h1>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="biodata.html" class="active">Tentang Kami</a>
+                <a href="produk.html">Katalog & Portofolio</a>
+                <a href="kontak.html">Kontak & Pemesanan</a>
+            </nav>
+        </div>
+    </header>
 
-    <div>
-        <h2>Riwayat Pendidikan</h2>
-          <!---->
-        <ol>
-            <li>SDN PEMDA 8</li>
-            <li>MTSN 3 BANJARMASIN</li>
-            <li>SMAN 13 BANJARMASIN</li>
-            <li>POLITEKNIK NEGERI BANJARMASIN</li>
-        </ol>
-    </div>
+    <!-- ISI BIODATA -->
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Profil Utama</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <p>Nama: <strong>Putri Annisa</strong></p>
+                        <p>NIM: <em>E30425121</em></p>
+                        <p>Program Studi: D4 Bisnis Digital</p>
+                        <p>Kelas: 3E Bisnis Digital</p>
+                    </div>
+                </article>
+            </div>
 
-    <div>
-    <h2>Hobi/Minat</h2>
-    <!---->
-    <ul>
-        <li>Tari Kreasi, Tradisional</li>
-        <li>Edit foto dan Video</li>
-        <li>Menghitung Uang</li>
-    </ul>
-    </div>    
+        </section>
+        <section class="section">
+            <h2 class="section-title">Riwayat Pendidikan</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <ol>
+                            <li>SDN PEMDA 8</li>
+                            <li>MTSN 3 BANJARMASIN</li>
+                            <li>SMAN 13 BANJARMASIN</li>
+                            <li>POLITEKNIK NEGERI BANJARMASIN</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        <section class="section">
+            <h2 class="section-title">Hobi/Minat</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li>Tari Kreasi, Tradisional</li>
+                            <li>Edit foto dan Video</li>
+                            <li>Menghitung Uang</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Poliban DigiCraft Studio</p>
+        </div>
+    </footer>
+
 </body>
+</html>
